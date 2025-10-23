@@ -26,5 +26,27 @@ const addCategory = async (categoryData) => {
   }
 };
 
-const categoryService = { addCategory };
+
+const getCategory = async () => {
+  try {
+    const user = JSON.parse(localStorage.getItem('user'))
+
+    if(!user?.token){
+       throw new Error('No token found. Please login again.')
+    }
+
+    const token = user.token
+
+    const response = await axiosInstance.get('/auth/getCategories', {
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    })
+    return response.data
+  } catch (error) {
+    throw new Error(error.message)
+  }
+}
+
+const categoryService = { addCategory, getCategory };
 export default categoryService;

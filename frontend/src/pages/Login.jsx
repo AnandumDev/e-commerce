@@ -40,7 +40,6 @@ const Login = () => {
   return (
     <div className="min-h-screen flex justify-center items-center bg-gray-100">
       <div className="w-[900px] h-[550px] flex rounded-2xl shadow-xl overflow-hidden">
-        {/* Left Side */}
         <div className="w-1/2 bg-[#043873] text-white flex flex-col justify-center items-center relative">
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute top-10 left-12 w-24 h-24 bg-white/10 rounded-full"></div>
@@ -58,14 +57,12 @@ const Login = () => {
           </button>
         </div>
 
-        {/* Right Side */}
         <div className="w-1/2 bg-white flex flex-col justify-center items-center px-12">
           <h2 className="text-2xl font-semibold text-[#FFB100] mb-1">
             Sign In to Your Account
           </h2>
 
           <form onSubmit={onSubmit} className="w-full mt-5 space-y-5">
-            {/* Email */}
             <div>
               <input
                 type="email"
@@ -78,7 +75,6 @@ const Login = () => {
               />
             </div>
 
-            {/* Password */}
             <div>
               <input
                 type="password"
@@ -94,7 +90,6 @@ const Login = () => {
               </p>
             </div>
 
-            {/* Submit Button */}
             <button
               type="submit"
               className="w-full py-3 bg-[#FFB100] text-white font-semibold rounded-full hover:bg-[#e0a000] transition-all duration-300"
