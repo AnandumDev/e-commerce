@@ -8,7 +8,7 @@ const app = express()
 const PORT = process.env.PORT
 
 app.use(cors({
-    origin: 'e-commerce-zeta-topaz-55.vercel.app',
+    origin: ['https://e-commerce-zeta-topaz-55.vercel.app'],
     credentials: true
 }))
 app.use(express.json())
