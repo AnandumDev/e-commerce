@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosIntance = axios.create({
-    baseURL: 'http://localhost:3000/api',
+    baseURL: 'https://e-commerce-3-m9ad.onrender.com/api',
     withCredentials: true,
     headers: {
         'Content-Type': 'application/json'
