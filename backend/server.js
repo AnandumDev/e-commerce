@@ -8,7 +8,7 @@ const app = express()
 const PORT = process.env.PORT
 
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: ['https://e-commerce-9-y81m.onrender.com'],
     credentials: true
 }))
 app.use(express.json())
